@@ -1,0 +1,10 @@
+<h1>Welcome#home</h1>
+<p>Find me in app/views/welcome/home.html.erb</p>
+
+    <div class="d-inline">
+        <% if @user.present? %>
+        <%= image_tag @user.images[0], class: 'rounded-circle miniatura' %>
+        <% else %>
+        <%= image_tag ('sinfoto.jpg'), class: 'rounded-circle miniatura' %>
+        <% end %>
+    </div>

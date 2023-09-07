@@ -1,0 +1,13 @@
+<h1>Mis postulaciones</h1>
+<ul>
+<% @offer.each do |offer| %>
+<li>
+<%= offer.titulo %> 
+<% offer.find_kind_user_relation(current_user) %>
+<p>
+<%= link_to "Show this offer", offer %>
+</p>
+</li>
+<%end %>
+</ul>
+
