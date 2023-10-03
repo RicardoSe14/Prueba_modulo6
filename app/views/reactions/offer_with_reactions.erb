@@ -1,13 +1,19 @@
+<div class="container ps-4">
+
 <h1>Mis postulaciones</h1>
-<ul>
+
+<div class="pt-5">
+
 <% @offer.each do |offer| %>
-<li>
+<p>
 <%= offer.titulo %> 
 <% offer.find_kind_user_relation(current_user) %>
-<p>
-<%= link_to "Show this offer", offer %>
 </p>
-</li>
+<p>
+<%= link_to "Mostrar esta oferta", offer %>
+</p>
 <%end %>
-</ul>
+
+</div>
+</div>
 

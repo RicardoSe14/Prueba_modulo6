@@ -1,3 +1,4 @@
+<div class="container ps-4">
 <p style="color: green"><%= notice %></p>
 
 <%= render @offer %>
@@ -10,8 +11,9 @@ method: :post %>
 
 
 <div>
-  <%= link_to "Edit this offer", edit_offer_path(@offer) %> |
-  <%= link_to "Back to offers", offers_path %>
+  <%= link_to "Editar esta oferta", edit_offer_path(@offer) %> |
+  <%= link_to "volver", offers_path %>
 
-  <%= button_to "Destroy this offer", @offer, method: :delete %>
+  <%= button_to "Eliminar", @offer, method: :delete %>
+</div>
 </div>

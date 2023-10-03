@@ -5,9 +5,3 @@ one:
   descripccion: MyString
   horas: MyString
   salario: MyString
-
-two:
-  titulo: MyString
-  descripccion: MyString
-  horas: MyString
-  salario: MyString

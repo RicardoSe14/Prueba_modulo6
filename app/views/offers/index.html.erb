@@ -1,8 +1,9 @@
+<div class="container ps-4">
 <p style="color: green"><%= notice %></p>
 
-<h1>Offers</h1>
+<h1>Ofertas disponibles</h1>
 
-<div id="offers">
+<div id="offers" class="pt-5">
   <% @offers.each do |offer| %>
     <%= render offer %>
     <p>
@@ -12,3 +13,5 @@
 </div>
 
 <%= link_to "New offer", new_offer_path %>
+
+</div>

@@ -4,8 +4,14 @@
 # model remove the "{}" from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-# column: value
+one: 
+  email: Esteban.Sea@index.cl
+  encrypted_password: 2a$12$JgVB.pAZfhM/hOpSgtPCMOa1z4a31LcTh7MuiZKxzsn.ZurjHLQwC
+  nombre: Esteban Eduardo
+  apellido: Sea Lima
+  fono: 
+  profesion: Medico
+  cargo: cirujano
+  tiempo: 1 año
+  info: Medico general
+  role: admin

@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
+
+  post 'create_user' => 'users#create', as: :create_user
+  get '/resource/sign_in'
+  post '/resource/sign_in'
+
+  get 'perfil/index'
   resources :offers
-  devise_for :users
+  devise_for :users, controllers: {
+    sessions: 'users/sessions',
+    registrations: 'users/registrations'
+    }
   get 'welcome/home'
   get '/my_reactions', to: 'reactions#offer_with_reactions', as: 'my_reactions'
 

@@ -4,8 +4,3 @@ one:
   kind: MyString
   offer: one
   user: one
-
-two:
-  kind: MyString
-  offer: two
-  user: two

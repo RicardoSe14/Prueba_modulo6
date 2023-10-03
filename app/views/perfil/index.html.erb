@@ -1,0 +1,44 @@
+    
+<div class= "container">   
+
+
+    <div class="centro">
+        <% if @user.images.present? %>
+        <%= image_tag @user.images[0], class: 'rounded-circle miniatura' %>
+        <% else %>
+        <%= image_tag ('sinfoto.jpg'), class: 'rounded-circle miniatura' %>
+        <% end %>
+    </div>
+
+<div class="izquierdo">
+  <p>
+    <strong>Nombre:</strong>
+    <%= @user.nombre%> <%= @user.apellido%>
+  </p>
+  <p>
+    <strong>Telefono:</strong>
+    <%= @user.fono%>
+  </p>
+  <p>
+    <strong>Profesión:</strong>
+    <%= @user.profesion%>
+  </p>
+  <p>
+    <strong>Cargo actual:</strong>
+    <%= @user.cargo%>
+  </p>
+  <p>
+    <strong>Tiempo en ese cargo:</strong>
+    <%= @user.tiempo%>
+  </p>
+  <p>
+    <strong>Email:</strong>
+    <%= @user.email%>
+  </p>
+  <p>
+    <strong>Otros datos:</strong>
+    <%= @user.info%>
+  </p>
+</div>
+
+</div>

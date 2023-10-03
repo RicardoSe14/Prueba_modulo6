@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+    color: white;
+    background: black;
+ }
+
+
+ .miniatura {
+
+    padding: 30px !important;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+ }
+
+ .index {
+   width: cover;
+   height: 300px;
+   background-image: url('index.png');
+ }
+
+ .centro {
+    background-image: url('index2.png');
+    position: relative;
+    display: flex;
+    justify-content: right;
+ }
+
+ .izquierdo {
+    padding-left: 35px;
+ }
+
+p {
+    color: white;
+    font-size: 1.4rem;
+}
+
+a {
+    font-size: 1.2rem;
+    color: white !important;
+    text-decoration: none;
+}

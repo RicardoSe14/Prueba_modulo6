@@ -1,5 +1,8 @@
 class OffersController < ApplicationController
   before_action :set_offer, only: %i[ show edit update destroy ]
+  before_action only: [:new, :create, :edit, :update, :destroy] do
+    authorize_request(["admin"])
+    end
 
   # GET /offers or /offers.json
   def index
